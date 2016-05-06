@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     CustomTabsServiceConnection mCustomTabsServiceConnection;
     CustomTabsIntent customTabsIntent;
 
-    static final String URL = "http://www.andreabondi.it";
+    static final String URL = "http://www.repubblica.it";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         customTabsIntent = new CustomTabsIntent.Builder(mCustomTabsSession)
                 .setToolbarColor(ContextCompat.getColor(this, R.color.colorPrimary))
-                .setShowTitle(true)
+                .setShowTitle(false)
                 .build();
         /*
             End custom tabs setup
