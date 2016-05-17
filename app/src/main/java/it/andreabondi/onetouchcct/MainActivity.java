@@ -29,7 +29,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String URL = "/pptest/process.php";
+    private static final String URL = "/onetouchserver/process.php";
     private static final String PAYPAL_URL = "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=";
 
     private ImageButton buyButton;

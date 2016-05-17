@@ -23,7 +23,7 @@ public class CompletePayPalPaymentActivity extends AppCompatActivity {
     private TextView textMessage;
     private Button completeButton;
     private List<String> params;
-    private static final String URL = "/pptest/process.php";
+    private static final String URL = "/onetouchserver/process.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +61,7 @@ public class CompletePayPalPaymentActivity extends AppCompatActivity {
                 RequestParams rp = new RequestParams();
                 rp.add("token", params.get(1));
                 rp.add("PayerID", params.get(2));
+                rp.add("paypal", "doEC");
 
                 HttpUtils.get(URL, rp, new JsonHttpResponseHandler() {
                     @Override
