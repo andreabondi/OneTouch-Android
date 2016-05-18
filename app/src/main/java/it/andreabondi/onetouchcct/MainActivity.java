@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
                 RequestParams rp = new RequestParams();
                 rp.add("paypal", "setEC");
+                rp.add("platform", "android");
 
                 Toast.makeText(MainActivity.this,
                         "Sending SetExpressCheckout to server", Toast.LENGTH_SHORT).show();
